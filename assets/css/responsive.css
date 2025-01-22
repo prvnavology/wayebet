@@ -1,0 +1,220 @@
+@media screen and (max-width:1199px) {
+    html {
+        font-size: 15px;
+    }
+
+    .menu-wrapper ul {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu-wrapper {
+        display: block;
+        position: fixed;
+        background-color: #000;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding: 50px;
+        box-shadow: rgb(159 159 159 / 60%) 0px 7px 29px 0px;
+        transform: translateX(-100%);
+        transition: all 0.3s linear;
+    }
+
+    .menuToggle .menu-wrapper {
+        transform: translateX(0%);
+    }
+
+    .close-menu {
+        display: block;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+
+}
+
+@media(max-width:991px) {
+    html {
+        font-size: 14px;
+    }
+
+    .section-heading {
+        font-size: 3rem;
+    }
+
+    .hotel_cards_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hot_cards_image {
+        height: 15.75rem;
+    }
+
+    .why_us_section .container .row {
+        justify-content: center;
+    }
+}
+
+@media(max-width:767px) {
+    .featured-cards-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .footer .footer-links a {
+        margin-bottom: 10px;
+    }
+
+    .after-footer .col-12 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+
+@media(max-width:575px) {
+    .text-container {
+        font-size: 3rem;
+    }
+
+    .hero-image {
+        height: 30.625rem;
+    }
+
+    .featured-cards-content p {
+        font-size: 14px;
+    }
+
+    .hotel_cards_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .background-image {
+        height: 18rem !important;
+    }
+
+    .newsletter-signup-wrapper h3 {
+        font-size: 2.5rem;
+    }
+
+    .newsletter-signup-wrapper p {
+        font-size: 1rem;
+    }
+
+    .newsletter-signup-wrapper {
+        padding: 6.25rem 1.125rem;
+    }
+
+    input.newsletter-signup-input {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .footer .footer-links a {
+        font-size: 1rem;
+    }
+
+    .common_banner {
+        height: 25.5rem;
+    }
+
+    .common__title h1 {
+        font-size: 2rem;
+    }
+
+    .common__title h3 {
+        font-size: 1.1rem;
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    .header_pages_content_grps {
+        padding: 20px 0;
+    }
+
+    .common__head {
+        padding: 0;
+    }
+
+    .common__para {
+        padding: 1.875rem 0;
+    }
+
+    .common__para h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:480px) {
+    .logo-wrapper a {
+        width: 10.75rem;
+    }
+
+    .hamburger-menu {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .new_banner_text p {
+        font-size: 1rem;
+    }
+
+    .featured-cards-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .featured-cards-content p {
+        font-size: 13px;
+    }
+
+    .featured-cards {
+        height: 17.625rem;
+    }
+
+    input.newsletter-signup-input {
+        width: 100%;
+    }
+
+    .after-footer p {
+        font-size: 13px;
+    }
+
+    .common__title h3 {
+        font-size: 1rem;
+    }
+
+    .hot_cards_group h2 {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .hot_cards_image {
+        height: 15.75rem;
+    }
+
+    .hot_cards_group p,
+    .hot_cards_group ul li {
+        font-weight: 500;
+    }
+
+    .why_us_inner .why_us_img {
+        height: 9.5rem;
+    }
+
+    .hot_cards {
+        padding: 1.5625rem;
+    }
+
+    .header_pages_content_grps h3 {
+        font-size: 2.5rem;
+    }
+
+    .contact-left h3 {
+        font-size: 3rem;
+    }
+
+
+}

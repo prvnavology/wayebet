@@ -1,0 +1,1519 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Global CSS Start */
+html {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", serif;
+    padding: 0;
+    margin: 0;
+    word-break: break-word;
+    background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Tangerine", serif;
+    margin: 0;
+    line-height: 1;
+}
+
+p {
+    line-height: 1.3;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    line-height: 1.2;
+    margin-bottom: 3px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Open Sans", serif;
+}
+
+button,
+textarea,
+input {
+    font-family: "Open Sans", serif;
+}
+
+input {
+    font-family: "Open Sans", serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.py-7 {
+    padding: 4.375rem 0;
+}
+
+.pt-7 {
+    padding-top: 4.375rem;
+}
+
+.pb-7 {
+    padding-bottom: 4.375rem;
+}
+
+.py-10 {
+    padding: 6.25rem 0;
+}
+
+.pb-10 {
+    padding-bottom: 6.25rem;
+}
+
+.pt-10 {
+    padding-top: 6.25rem;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.m-0-auto {
+    margin: 0 auto
+}
+
+.bg-center {
+    background-position: center;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-contain {
+    background-size: contain;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.bg-0-0 {
+    background-position: 0% 0%;
+}
+
+/* Global CSS End */
+
+/* Section Heading CSS Start */
+.section-heading {
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+span.green {
+    color: #66FF00;
+}
+
+/* Section Heading CSS End */
+/* Header CSS Start */
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    padding: 0 2.5rem;
+    padding: 0.9375rem 0px;
+}
+
+.sticky-navbar.fixed-header {
+    box-shadow: #66FF00 0px 5px 8px 0px;
+    background-color: #000;
+}
+
+.top-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #000;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #66FF00;
+}
+
+.logo-wrapper {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.logo-wrapper a {
+    background-image: url(../images/logo.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3.75rem;
+    width: 18.75rem;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.hamburger-menu {
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    text-align: right;
+    cursor: pointer;
+    margin: auto 0;
+    background-image: url("../images/menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.menu-wrapper {
+    display: flex;
+}
+
+.menu-wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-wrapper ul li a {
+    padding: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: normal;
+    position: relative;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: "Open Sans", serif;
+}
+
+.menu-wrapper ul li a:hover {
+    color: #66FF00;
+}
+
+.menu-wrapper ul li a.active {
+    color: #66FF00;
+}
+
+.menu-wrapper ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #66FF00;
+    transform-origin: center;
+    transition: all 0.3s ease-out;
+}
+
+.menu-wrapper ul li a.active::after {
+    transform: scaleX(0.9);
+    background: #66FF00;
+    transform-origin: center;
+}
+
+.menu-wrapper ul li a:hover::after {
+    transform: scaleX(0.9);
+}
+
+.close-menu {
+    display: none;
+    background-image: url(../images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Header CSS End */
+
+/* Banner Section CSS Start */
+.hero-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    height: 40.625rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vd_naive {
+    position: relative;
+}
+
+.vd_naive::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.hero-banner .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    overflow: hidden;
+}
+
+.text-container {
+    display: flex;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    overflow: hidden;
+}
+
+.text-container h1 {
+    font-size: 3.125rem;
+    color: #fff;
+}
+
+.text-item {
+    display: inline-block;
+    position: relative;
+    transform: translateX(0);
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    color: #66FF00;
+}
+
+.text-item.left {
+    transform: translateX(-200%);
+    animation-name: slide-in-left;
+}
+
+.text-item.right {
+    transform: translateX(200%);
+    animation-name: slide-in-right;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Banner Section  CSS End */
+
+/* New Home Banner Text CSS Start */
+.new_home_banner_text_wrapper {
+    background-color: #000;
+}
+
+.new_banner_text p {
+    color: #fff;
+    max-width: 79.25rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* New Home Banner Text CSS End */
+
+
+/* Home Cards CSS Start */
+.featured-cards-section {
+    background-image: url("../images/home-featured-cards-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    isolation: isolate;
+    background-color: rgba(0 0 0/70%);
+    background-blend-mode: multiply;
+    padding: 5rem 0 3.125rem 0;
+    overflow: hidden;
+}
+
+.featured-cards {
+    position: relative;
+    height: 20.625rem;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+}
+
+.featured-cards:hover {
+    transform: translateY(-3px);
+    box-shadow: #66FF00 0px 7px 10px 0px;
+}
+
+.featured-cards-image {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.featured-cards-image a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0 0 0/35%);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s all ease-in-out;
+}
+
+
+
+.featured-cards-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all ease-in-out;
+}
+
+.featured-cards-content a {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s all ease-in-out;
+}
+
+.featured-cards-content h3 {
+    font-size: 2.1875rem;
+    color: #fff;
+    font-family: "Open Sans", serif;
+    margin-bottom: 15px;
+}
+
+.featured-cards-content p {
+    font-size: 15px;
+    color: #fff;
+    max-width: 28.125rem;
+    margin: 0 auto;
+}
+
+/* Home Cards CSS End*/
+
+/* Hotel Category Cards CSS Start */
+.hotel_cards_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.hotel-item {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0 1%;
+}
+
+.background-image {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    height: 25rem !important;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #66FF00 !important;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.hotel-item:hover .overlay {
+    height: 100%;
+}
+
+.hotel_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: "Tangerine", serif;
+}
+
+.hotel_text span {
+    font-weight: 300;
+}
+
+.hotel_text h3 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 600;
+    font-family: "Open Sans", serif;
+}
+
+/* Hotel Category Cards CSS Start */
+
+/* Home Slider CSS Start */
+.testi_cards_section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0 0 0/65%);
+    background-blend-mode: multiply;
+    overflow-x:hidden;
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+
+.slick-dots li button:before {
+    font-size: 1.875rem;
+    opacity: 1;
+    color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #66FF00;
+}
+
+.slick-prev,
+.slick-next {
+    display: none !important;
+}
+
+.testi_cards_wrap .slick-slide {
+    transition: transform 0.4s ease-in-out;
+}
+
+.testi_cards_wrap .slick-track {
+    transition: transform 0.4s ease-in-out;
+}
+
+.testi_cards {
+    padding: 4rem 1.25rem;
+    background: #fff;
+    border-radius: 0 20px;
+    height: 100%;
+    text-align: center;
+    box-shadow: #66FF00 0px 5px 15px;
+}
+
+.testi_cards_content_content h3 {
+    color: #000;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 1.25rem;
+}
+
+.testi_cards_content_content p {
+    color: #515151;
+    margin-bottom: 0.9375rem;
+}
+
+.testi_cards_content_content h5 {
+    color: #515151;
+    margin-top: 1.5rem;
+}
+
+.slick-slide {
+    padding: 15px;
+}
+
+.testi_cards_content_img {
+    width: 100%;
+    height: 0.9375rem;
+    margin-bottom: 4rem;
+}
+
+.testi_cards_img_inner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 4.375rem;
+    width: 4.375rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.testi_cards_content p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.testi_cards_content h5 {
+    margin-top: 15px;
+    font-size: 2.1875rem;
+    font-weight: 600;
+}
+
+/* to make slides equal height */
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit;
+}
+
+/* to make slides equal height */
+/* Home Slider CSS End*/
+
+
+/* Home Page Signup CSS Start */
+
+
+.newsletter-signup-wrapper {
+    text-align: center;
+    background: #fff;
+    padding: 6.25rem 3.125rem;
+    max-width: 62.5rem;
+    margin: 0 auto;
+    color: #000;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.newsletter-signup-wrapper::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0 0 0/60%);
+    top: 0;
+    left: 0;
+    inset: 0;
+    background-blend-mode: multiply;
+    z-index: -1;
+}
+
+.newsletter-signup-input-wrapper {
+    padding-top: 1.25rem;
+    margin: 0 auto;
+}
+
+input.newsletter-signup-input {
+    width: 60%;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.5625rem 0.625rem;
+    outline: none;
+    line-height: 20px;
+    color: #000;
+}
+
+.newsletter-signup-submit-button {
+    display: inline-block;
+    background-color: #66FF00;
+    padding: 0.5625rem 1.5625rem;
+    font-size: 1rem;
+    color: #000;
+    outline: none;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: 0.5s all ease-in-out;
+    line-height: normal;
+}
+
+.newsletter-signup-submit-button:hover {
+    background-color: #fff;
+    border-color: #66FF00;
+    color: #000;
+    box-shadow: #66FF00 0px 4px 8px;
+}
+
+.newsletter-signup-wrapper h3 {
+    font-size: 3rem;
+    max-width: 50rem;
+    margin: 0 auto 20px auto;
+    line-height: normal;
+    font-weight: 700;
+    color: #fff;
+}
+
+.newsletter-signup-wrapper p {
+    font-size: 1.1rem;
+    max-width: 35rem;
+    margin: 0 auto 20px auto;
+    line-height: normal;
+    color: #fff;
+}
+
+/* Home Page Signup CSS End */
+
+/* Footer CSS Start */
+.footer {
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: #66FF00 0px 3px 15px;
+}
+
+.footer .footer-logos {
+    margin-bottom: 2.8125rem;
+}
+
+.footer .footer-logo {
+    padding-bottom: 0.9375rem;
+}
+
+.footer .footer-logo img {
+    width: 11.25rem;
+}
+
+.footer .footer-links {
+    padding-top: 1rem;
+}
+
+.footer .footer-links a {
+    padding: 0 7px;
+    font-size: 1.125rem;
+    color: #fff;
+    display: inline-block;
+}
+
+.footer .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+
+}
+
+.footer .footer-links ul li {
+    padding: 0 15px 5px 0;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.footer .footer-links ul li:last-child {
+    padding-right: 0;
+}
+
+.logo-bottom a {
+    color: #fff;
+    font-size: 1.875rem;
+}
+
+.footer a:hover {
+    color: #66FF00;
+}
+
+.footer a i {
+    font-size: 0.75rem;
+    padding-right: 0.625rem;
+}
+
+.footer .copyright .logo {
+    width: 6.875rem;
+}
+
+.footer .copyright p {
+    padding-bottom: 1.25rem;
+}
+
+.footer .copyright p:last-child {
+    padding-bottom: 0;
+}
+
+.copyright-text p {
+    color: #fff;
+}
+
+.after-footer {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0.9375rem 0 0.9375rem;
+    color: #000;
+    font-size: 0.9375rem;
+}
+
+.after-footer p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 0.9375rem;
+}
+
+.after-footer .before-footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ssl-certi-inner {
+    height: 3.75rem;
+    width: 18.75rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+.after-footer .col-12 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-size: 0.9375rem;
+}
+
+.after-footer .col-12 a {
+    color: #000
+}
+
+.after-footer .col-12 a:hover {
+    color: #afbff9;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.after-footer .col-12 .social-links a {
+    background-color: #66FF00;
+    color: #000;
+    margin: 0 5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all ease-in-out;
+}
+
+.after-footer .col-12 .social-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: #fff 0px 3px 10px;
+}
+
+
+
+.social-links a i {
+    font-size: 1.25rem;
+    padding-right: 0.4375rem;
+    padding-left: 0.4375rem;
+}
+
+.disclaimer_txt {
+    border-top: 1px solid #66FF00;
+    border-bottom: 1px solid #66FF00;
+}
+
+.disclaimer_txt h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #66FF00;
+}
+
+/* Footer CSS End */
+
+/* Hotel Pages CSS Start */
+.hot-cards-wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.text-left {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.625rem;
+}
+
+.external-pages-link-btn {
+    background-color: #66FF00;
+    color: #000;
+    border: none;
+    outline: none;
+    padding: 0.625rem 1.25rem;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+    line-height: normal;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    font-weight: 600;
+    border-radius: 10px 0;
+}
+
+.external-pages-link-btn:hover {
+    transform: translateY(2px);
+}
+
+.btn-darkred-block {
+    color: #000;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    border: unset;
+    background: transparent;
+}
+
+.hot_cards {
+    margin-bottom: 2.5rem;
+    box-shadow: rgba(255, 0, 0, 0.25) 0px 10px 20px -20px, rgba(255, 0, 0, 0.3) 0px 10px 10px -30px, rgba(255, 0, 0, 0.35) 0px -2px 6px 0px inset;
+    padding: 1.5625rem;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: #fff;
+}
+
+.hot_exp_content {
+    display: none;
+}
+
+.hot_dollar_bag {
+    margin-right: 0.5rem;
+    animation: beat 2s ease-in infinite;
+    font-weight: 900;
+    color: #000;
+    font-size: 17px;
+}
+
+.hot_cards-image_outer {
+    overflow: hidden;
+}
+
+.hot_cards-image {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: 1.25rem;
+    transition: 0.4s all ease-in-out;
+}
+
+.hot_cards-image_outer {
+    height: 100%;
+}
+
+.hot_cards_group {
+    margin-bottom: 0.9375rem;
+}
+
+.hot_cards_content {
+    padding: 0.9375rem 0;
+}
+
+.hot_cards_group h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.625rem;
+    font-family: "Open Sans", serif;
+}
+
+.hot_cards_group p {
+    margin-bottom: 5px;
+}
+
+.hot_cards_group ul li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+    margin-left: 1rem;
+}
+
+.hot_exp_content h3 {
+    color: #66FF00;
+    font-size: 1.5625rem;
+    margin-bottom: 0.9375rem;
+}
+
+.hot_cards_image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 18.75rem;
+    width: 100%;
+}
+
+span.heading-like {
+    font-weight: 700;
+    color: #000;
+    font-size: 1.0625rem;
+}
+
+.loc_dollar_bag {
+    margin-right: 0.5rem;
+    animation: pulse 3s ease-in infinite;
+    color: #000;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+#contact {
+    background-image: url("../images/how-we-compare-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    max-width: 500px;
+}
+
+.contact_us_content .row {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact_us_content fieldset:last-child {
+    margin-bottom: 0;
+}
+
+.contact_us_content #contact button {
+    margin-bottom: 0;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input,
+#contact textarea,
+#contact select {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact input:hover,
+#contact textarea:hover,
+#contact select:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact select {
+    max-width: 100%;
+    color: #444546;
+    outline: none;
+}
+
+#contact button {
+    cursor: pointer;
+    border: none;
+    color: #000;
+    margin: 0 0 5px;
+    width: auto;
+    padding: 0.8125rem 2.5rem;
+    font-size: 1.0625rem;
+    transition: 0.4s all ease-in-out;
+    background-color: #66FF00;
+    border-radius: 8px;
+}
+
+#contact button:hover {
+    background-color: #fff;
+    box-shadow: #66FF00 0px 3px 8px;
+    color: #66FF00;
+    border-color: #fff;
+}
+
+#contact button:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+    text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #444546;
+}
+
+::-webkit-input-placeholder,
+::-webkit-select-placeholder {
+    color: #444546;
+}
+
+:-moz-placeholder {
+    color: #444546;
+}
+
+:-ms-input-placeholder {
+    color: #444546;
+}
+
+.modal {
+    z-index: 99999;
+}
+
+.modal-title {
+    color: #000;
+    font-size: 35px !important;
+    font-family: "Open Sans", serif;
+}
+
+/* Pages Cards CSS End */
+
+
+/* Why Choose Us CSS Start */
+.why_us_section {
+    box-shadow: #66FF00 0px 5px 20px;
+}
+
+.why_us_section .row {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.why_us_inner {
+    border: 1px solid #000;
+    padding: 0.625rem;
+    height: 100%;
+}
+
+.kiwi_image {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    height: 18.75rem;
+}
+
+.why_us_inner h3 {
+    font-size: 1.375rem;
+    margin: 0.625rem 0;
+}
+
+.why_us_inner .kiwi_image {
+    transition: all .3s linear;
+}
+
+.why_us_inner .kiwi_image:hover {
+    transform: scale(1.1);
+}
+
+.why_us_inner .kiwi_image {
+    width: 100%;
+    height: 12.5rem;
+    object-fit: cover;
+}
+
+.why_us_inner .why_us_img {
+    overflow: hidden;
+    height: 10.5rem;
+    display: block;
+    width: 100%;
+    margin-bottom: 0.625rem;
+    border-radius: 20px 0;
+}
+
+.kiwi_section_main_inner p {
+    text-align: center;
+    margin-top: 3.125rem;
+}
+
+.why_us_inner {
+    box-shadow: #66FF00 0px 5px 15px;
+    padding: 1.25rem;
+    height: 100%;
+    border-radius: 20px 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.why_us_inner:hover {
+    transform: translateY(-4px);
+    box-shadow: #fff 0px 5px 15px;
+}
+
+.why_image {
+    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    height: 10.75rem;
+}
+
+.why_us_inner h3 {
+    font-size: 2.5rem;
+    margin: 0.9375rem 0;
+    color: #fff;
+}
+
+.why_us_inner p {
+    color: #fff;
+}
+
+.why_us_btn {
+    display: inline-block;
+    background-color: #66FF00;
+    padding: 0.8625rem 1.5625rem;
+    font-size: 1rem;
+    color: #000;
+    outline: none;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: 0.5s all ease-in-out;
+    line-height: 20px;
+    border-radius: 10px 0;
+}
+
+.why_us_btn:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+    border-color: #66FF00;
+    color: #000;
+    box-shadow: #66FF00 0px 4px 8px;
+}
+
+/* Why Choose Us CSS Start */
+
+/* Header Pages CSS Start */
+.header_pages_content_section {
+    margin-top: -80px;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.header_pages_content_wrap {
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 25px;
+    background: #f5f5f7;
+    border-radius: 20px;
+    background-image: url(../images/header-pages-bg-content.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0 0 0/50%);
+    background-blend-mode: multiply;
+}
+
+.header_pages_content_grps h3 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.header_pages_content_grps {
+    border-top: 1px solid #c3c8ca;
+    padding: 20px;
+}
+
+.header_pages_content_grps p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.contact-left h3 {
+    font-size: 4rem;
+    margin: 15px 0;
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact-left p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-right p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-right #contact button:hover {
+    color: #000;
+}
+
+/* Header Pages CSS End */
+
+
+/* common page css start */
+.common_banner {
+    height: 37.5rem;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.common_banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 60%);
+}
+
+.common__title.text-center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.common__title h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: normal;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: "Open Sans", serif;
+}
+
+.common__sec {
+    padding: 4.25rem 1.25rem;
+    color: #fff;
+}
+.common__head {
+    padding: 0 20px;
+}
+
+.common__head h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.common__head p {
+    font-size: 1.0625rem;
+    line-height: 25px;
+}
+
+.common__para {
+    padding: 1.875rem 1.25rem;
+}
+
+.common__para h3 {
+    margin: 20px 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.common__para p {
+    margin: 15px 0;
+}
+
+.common__para ul li {
+    margin: 10px 0;
+    list-style: disc;
+    line-height: 25px;
+}
+
+.common__para a {
+    color: #fff;
+}
+
+.common__title h3 {
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: normal;
+    font-family: "Open Sans", serif;
+}
+
+.common__para ul {
+    padding-left: 1.0625rem;
+}
+
+/* common page css end */
