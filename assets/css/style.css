@@ -1163,7 +1163,7 @@ fieldset {
     margin: 0 0 5px;
     padding: 10px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #contact input:hover,
@@ -1241,7 +1241,7 @@ fieldset {
 
 .modal-title {
     color: #000;
-    font-size: 35px !important;
+    font-size:2.1875rem  !important;
     font-family: "Open Sans", serif;
 }
 

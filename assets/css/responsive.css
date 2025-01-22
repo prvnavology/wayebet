@@ -146,6 +146,9 @@
     .common__para h3 {
         font-size: 2.5rem;
     }
+    .modal-title {
+        font-size: 1.8rem;
+    }
 }
 
 @media(max-width:480px) {
