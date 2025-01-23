@@ -583,12 +583,6 @@ span.green {
     transform: translate(-50%, -50%);
     color: #000;
     text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-family: "Tangerine", serif;
 }
 
 .hotel_text span {
@@ -596,12 +590,19 @@ span.green {
 }
 
 .hotel_text h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #000;
     font-weight: 600;
     font-family: "Open Sans", serif;
+    text-transform: uppercase;
 }
-
+.hotel_text p {
+    font-size: 1.05rem;
+    color: #000;
+    font-family: "Open Sans", serif;
+    margin-top: 20px;
+    font-weight: 500;
+}
 /* Hotel Category Cards CSS Start */
 
 /* Home Slider CSS Start */
