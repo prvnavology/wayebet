@@ -73,7 +73,9 @@ $('.subpage-readmore-btn').click(function (e) {
 });
 // Read More Functionality JS end
 
-
+AOS.init({
+  duration:1200,
+});
 
 
 
